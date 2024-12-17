@@ -1,0 +1,19 @@
+<launch>
+  <!-- Launch the rosbridge WebSocket server -->
+  <node name="rosbridge_websocket" pkg="rosbridge_server" type="rosbridge_websocket" output="screen">
+    <!-- WebSocket server port (default: 9090) -->
+    <param name="port" value="9090" />
+   
+    <!-- Set the maximum message size (in bytes) -->
+    <param name="max_message_size" value="10000000" />
+   
+    <!-- Set the idle timeout (in seconds), after which idle WebSocket connections will be closed -->
+    <param name="idle_timeout" value="240" />
+   
+    <!-- Enable compression (optional, default is false) -->
+    <param name="use_compression" value="true" />
+  </node>
+
+  <!-- Optionally include the ROS parameter server -->
+  <param name="/rosbridge_websocket/enable_warnings" value="false" />
+</launch>

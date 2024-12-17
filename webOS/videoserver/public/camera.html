@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurtleBot3 Video Stream</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        img {
+            max-width: 640px;
+            max-height: 480px;
+            width: 100%;
+            height: auto;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <img id="videoFeed" alt="TurtleBot3 Video Stream" />
+
+    <script>
+        const socket = new WebSocket('ws://192.168.242.34:4000');
+        socket.binaryType = 'arraybuffer';  // WebSocket 데이터 타입 설정
+
+        socket.onopen = () => {
+            console.log('WebSocket 연결 성공');
+        };
+
+        socket.onerror = (error) => {
+            console.error('WebSocket 오류:', error);
+        };
+
+        socket.onmessage = (event) => {
+            console.log('프레임 수신');
+            const videoFeed = document.getElementById('videoFeed');
+            videoFeed.onerror = () => {
+                console.error("이미지 로딩 실패");
+            };
+
+            // ArrayBuffer로 수신한 데이터를 Blob으로 변환
+            const arrayBuffer = event.data;
+            const blob = new Blob([arrayBuffer], { type: 'image/jpeg' });
+            const imageUrl = URL.createObjectURL(blob);
+            videoFeed.src = imageUrl;
+        };
+    </script>
+</body>
+</html>

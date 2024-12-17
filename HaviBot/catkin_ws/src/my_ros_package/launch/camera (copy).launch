@@ -1,0 +1,4 @@
+<launch>
+  <node name="video_node" pkg="my_ros_package" type="camera.py" output="screen" />
+</launch>
+

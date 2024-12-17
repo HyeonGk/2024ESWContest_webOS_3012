@@ -1,0 +1,249 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #a6b28f; /* 사용자 정의 배경색 */
+    padding: 20px;
+}
+
+.title {
+    font-size: 200px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    height: 60%;
+}
+
+/* 첫 번째 영역 - 달력 위젯 스타일 */
+.calendar, .sensorData, .placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px; /* 둥근 모서리 */
+    padding: 120px;
+}
+
+.customCalendar {
+    width: 80%;
+    border: none; /* 기본 테두리 제거 */
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+}
+
+.calendar h2 {
+    color: #a6b28f;
+}
+
+.inlineDate {
+    font-size: 70px;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #a6b28f;
+}
+
+/* 두 번째 영역 - 센서 데이터 스타일 */
+.sensorData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sensorData h2 {
+    color: #a6b28f;
+}
+
+.sensorGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    width: 100%;
+}
+
+.sensorItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6d086;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+.sensorItem h3 {
+    margin: 0;
+    font-size: 54px;
+}
+
+.sensorItem p {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.arrowButton {
+    font-size: 96px;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease;
+}
+
+.arrowButton:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* 새로운 위젯 스타일 */
+.newWidget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.newWidget h2 {
+    font-weight: bold;
+    color: #a6b28f;
+    font-size: 54px;
+    text-align: center;
+}
+
+.dateSelectors {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.dateSelectors label {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.dateSelectors select {
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* 수확 작물 현황 결과 */
+.harvestResult {
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    line-height: 1.5;
+    color: #ef4107;
+    font-size: 48px; /* 옵션 텍스트 크기 설정 */
+    font-weight: bold; /* 옵션 텍스트 굵기 설정 */
+}
+
+.dateSelectors {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.selectBox {
+    position: relative;
+    width: 600px; /* 크기를 조금 더 크게 설정 */
+    height: 60px; /* 높이 설정 */
+    border-radius: 9px;
+    border: 8px solid #a6b28f;
+    font-size: 48px; /* 옵션 텍스트 크기 설정 */
+    font-weight: bold; /* 옵션 텍스트 굵기 설정 */
+  }
+
+  .selectBox .select {
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    border: 0 none;
+    outline: 0 none;
+    padding: 0 5px;
+    position: relative;
+    z-index: 3;
+    color: #a6b28f;
+    font-size: 36px; /* 옵션 텍스트 크기 설정 */
+    font-weight: bold; /* 옵션 텍스트 굵기 설정 */
+  }
+  .selectBox .select option {
+    background: #a6b28f;
+    color: #fff;
+    padding: 3px 0;
+    font-size: 36px; /* 옵션 텍스트 크기 설정 */
+    font-weight: bold; /* 옵션 텍스트 굵기 설정 */
+  }
+
+  .fullWidthWidget {
+    grid-column: span 2; /* 전체 너비 */
+    width: 90%;
+}
+
+.sensorData {
+    position: relative; /* 버튼이 위젯 안에 고정될 수 있도록 부모에 position 설정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.linkButton {
+    position: absolute;
+    top: 10px; /* 상단 여백 설정 */
+    right: 5%; /* 오른쪽에서 50% 떨어진 위치 */
+    transform: translateX(50%); /* 중앙 정렬 */
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.linkIcon {
+    width: 80px;
+    height: 80px;
+    border: none; /* 테두리 제거 */
+    border-radius: 10%; /* 아이콘을 둥글게 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    transition: transform 0.2s ease;
+}
+
+.linkButton:hover .linkIcon {
+    transform: scale(1.1); /* 호버 시 확대 효과 */
+}

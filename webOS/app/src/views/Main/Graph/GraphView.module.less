@@ -1,0 +1,72 @@
+/* src/views/Main/Graph/GraphView.module.less */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #a6b28f;
+    padding: 20px;
+}
+
+.title {
+    font-size: 200px;
+    margin-bottom: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.widget {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 2500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; 
+}
+
+.widget h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.widget img {
+    margin-top: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 90%; /* 이미지의 너비 조정 */
+    max-width: 800px; /* 이미지 최대 너비 */
+    height: auto;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.backButton {
+    position: absolute;
+    top: 40px;
+    right: 40px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.backIcon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

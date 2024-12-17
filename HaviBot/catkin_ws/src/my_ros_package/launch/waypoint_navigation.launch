@@ -1,0 +1,10 @@
+<launch>
+    <!-- ROS Master 설정 -->
+    <arg name="ros_master_uri" default="http://172.20.10.4:11311" />
+
+    <!-- move_base 노드 실행 -->
+    <include file="$(find turtlebot3_navigation)/launch/move_base.launch" />
+
+    <!-- Waypoint Navigator 노드 실행 -->
+    <node pkg="my_ros_package" type="waypoint_navigator.py" name="turtlebot_waypoint_navigator" output="screen" />
+</launch>

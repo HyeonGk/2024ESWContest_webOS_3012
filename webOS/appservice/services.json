@@ -1,0 +1,11 @@
+{
+  "id": "com.farm.app.service",
+  "description": "Service",
+  "services": [
+    {
+      "id": "com.farm.app.service",
+      "name": "com.farm.app.service",
+      "type": "webos"
+    }
+  ]
+}

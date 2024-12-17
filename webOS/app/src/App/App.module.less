@@ -1,0 +1,98 @@
+.app {
+    background-color: #a6b28f; /* 전체 배경색 */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative; /* 슬라이드 메뉴가 앱 내에서 이동하도록 설정 */
+}
+
+/* 슬라이드 메뉴 기본 스타일 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 100%;
+    background-color: #3d5c4a;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(-100%); /* 처음에 메뉴가 화면 바깥에 위치 */
+    transition: transform 0.3s ease-in-out; /* 슬라이드 애니메이션 */
+    z-index: 1000; /* 다른 요소보다 위에 보이도록 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* 메뉴 항목 간 균등 간격 */
+    align-items: center;
+}
+
+/* 메뉴가 열렸을 때 (슬라이드 메뉴 오픈) */
+.sidebar.open {
+    transform: translateX(0); /* 메뉴가 열리면서 화면에 나타남 */
+}
+
+.menu-icon {
+    position: fixed; /* 화면에 고정 */
+    top: 60px;
+    left: 80px;
+    font-size: 130px; /* 햄버거 아이콘 크기 */
+    cursor: pointer;
+    z-index: 1001; /* 메뉴보다 더 앞에 위치 */
+}
+
+.menu-icon img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain; /* 이미지가 영역에 맞도록 설정 */
+}
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* 메뉴가 슬라이드 전체 폭을 차지하게 설정 */
+}
+
+.menu-items li {
+    width: 92%; /* 메뉴의 너비를 화면의 80%로 설정 */
+    padding: 20px;
+    margin: 100px 0;
+    font-size: 56px; /* 글자 크기 조정 */
+    font-weight: bold; /* 글자 두께 */
+    background-color: #e7ebe8; /* 메뉴 배경색 */
+    color: #3d5c4a; /* 텍스트 색상 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    border-radius: 10px; /* 네모 모양을 부드럽게 둥글게 */
+    cursor: pointer; /* 마우스를 올리면 클릭 가능한 느낌 */
+    transition: background-color 0.3s ease; /* 배경색 전환 애니메이션 */
+}
+
+/* 메뉴 항목에 마우스를 올렸을 때 스타일 */
+.menu-items li:hover {
+    background-color: #4f7a64; /* 마우스 오버 시 배경색 변경 */
+}
+
+/* a 태그의 기본 스타일을 제거해서 박스 전체를 클릭 가능하게 설정 */
+.menu-items li a {
+    display: block;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: inherit; /* 링크 텍스트 색상 상속 */
+    width: 100%;
+    height: 100%;
+}
+
+
+.exitButton {
+    background-color: transparent; /* 배경색 투명 */
+    border: none; /* 테두리 제거 */
+    cursor: pointer; /* 커서 변경 */
+    padding: 10px; /* 여백 추가 */
+    transition: transform 0.3s ease; /* 버튼 눌렀을 때의 애니메이션 */
+}
+
+.exitButton:hover {
+    transform: scale(1.1); /* 호버 시 약간 확대 */
+}
+
+.exitIcon {
+    width: 120px; /* 아이콘 크기 */
+    height: 120px;
+}

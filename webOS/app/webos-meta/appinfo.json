@@ -1,0 +1,26 @@
+{
+	"id": "com.farm.app",
+	"version": "1.0.0",
+	"vendor": "LGE-SVL",
+	"type": "web",
+	"main": "index.html",
+	"title": "Agribot",
+	"icon": "farm.png",
+	"miniicon": "icon-mini.png",
+	"largeIcon": "icon-large.png",
+	"uiRevision": 2,
+	"requiredPermissions": [
+	  "time.query",
+	  "activity.operation",
+	  "notification.operation",
+	  "database.operation",
+	  "tts.operation",
+	  "alarm.operation",
+	  "bluetooth.operation",
+	  "bluetooth.query",
+	  "bluetooth.management",
+	  "application.launcher",
+	  "com.farm.app.service.group"
+	]
+  }
+  

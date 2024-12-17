@@ -1,0 +1,13 @@
+<launch>
+    <!-- ROS Master -->
+    <arg name="ros_master_uri" default="http://172.20.10.4:11311" />
+
+    <!-- ROS Bridge 서버 실행 -->
+    <node pkg="rosbridge_server" type="rosbridge_websocket" name="rosbridge_websocket" output="screen" />
+
+    <!-- 컨트롤러 노드 실행 -->
+    <node pkg="my_ros_package" type="vel_control.py" name="turtlebot_controller" output="screen" />
+
+    <!-- move_base 및 SLAM (필요한 경우) 노드 실행 -->
+    <include file="$(find turtlebot3_navigation)/launch/move_base.launch" />
+</launch>

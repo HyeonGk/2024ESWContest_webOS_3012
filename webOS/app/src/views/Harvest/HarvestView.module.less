@@ -1,0 +1,218 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    background-color: #a6b28f;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center; /* 제목을 중앙에 배치 */
+    position: relative; /* 자식 요소의 절대 위치를 기준으로 설정 */
+    width: 100%;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 120px;
+    color: #fff;
+    margin-top: 120px;
+    text-align: center;
+    z-index: 1; /* 다른 요소 위에 표시되도록 설정 */
+}
+
+.bluetoothButton {
+    position: absolute; /* 버튼을 고정 위치에 배치 */
+    top: 20px; /* 상단에서 20px 아래 */
+    right: 20px; /* 오른쪽에서 20px 떨어진 위치 */
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bluetoothIcon {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.bluetoothButton:hover .bluetoothIcon {
+    transform: scale(1.1); /* 호버 시 확대 효과 */
+}
+
+
+
+.mainContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.widgetContainer {
+    width: 57%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 100px; /* 위젯을 오른쪽으로 이동 */
+    margin-left: 300px;
+    height: 1000px;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    // height: 700px; /* 로봇 상태와 로그 창의 높이를 고정 */
+    margin-left: 50px;
+    overflow: hidden;
+    /*edited by jacksmith(start)*/
+    position: relative;
+    height: 1000px;
+    /*edited by jacksmith(end)*/
+}
+
+.widget iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* iframe 테두리를 없앱니다 */
+}
+
+.logArea {
+    width: 30%;
+    height: 900px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    //height: 700px; /* 로그 영역 높이를 로봇 상태 위젯과 일치 */
+    overflow-y: auto;
+    margin-top: 25px;
+    margin-right: 30px; /* 로그를 더 오른쪽으로 밀어넣음 */
+}
+
+.logArea h2 {
+    font-size: 40px;
+    color: #00bfa5;
+    margin-bottom: 10px;
+}
+
+.logContent {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    border-top: 1px solid #ccc; /* 로그 상단에 테두리 */
+    padding-top: 10px;
+    //max-height: 100%;
+}
+
+.logContent p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 5px 0; /* 위아래 여백 추가 */
+    font-family: monospace; /* 로그처럼 보이기 위해 monospace 폰트 사용 */
+    border-bottom: 1px solid #ccc; /* 각 로그 아래에 선 추가 */
+}
+
+.logContent p:last-child {
+    border-bottom: none; /* 마지막 로그에는 선이 나타나지 않도록 설정 */
+}
+
+.commandArea {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 버튼을 1행에 4개 배치 */
+    grid-gap: 20px; /* 버튼 사이 간격 */
+    width: 50%; /* 위젯과 동일한 너비로 설정 */
+    height: 13%;
+    padding: 20px;
+    background-color: #b08f6c;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-left: 0px;
+    margin-right: auto; /* 커맨드 영역도 중앙에 배치 */
+    left: 380px; /* 커맨드 영역을 화면의 왼쪽에 위치시키기 */
+    position: absolute;
+    bottom: 100px;
+}
+
+.commandButton {
+    width: 100%;
+    height: 200px;
+    font-size: 36px;
+    background-color: #a64d4d;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, transform 0.1s ease; /* 호버 시 부드러운 효과 */
+}
+
+.commandButton:hover {
+    background-color: #923838; /* 약간 어두운 색상으로 변경 */
+    transform: scale(0.98); /* 살짝 눌린 느낌 */
+}
+
+
+.directions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 20px;
+    background-color: #b08f6c;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 200px;
+    bottom: 50px;
+}
+
+.horizontalButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.directionButton {
+    width: 120px;
+    height: 80px;
+    font-size: 36px;
+    background-color: #9cbdb8;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, transform 0.1s ease; /* 호버 시 부드러운 효과 */
+}
+
+.directionButton:hover {
+    background-color: #7da09e; /* 약간 어두운 색상으로 변경 */
+    transform: scale(0.98); /* 살짝 눌린 느낌 */
+}
