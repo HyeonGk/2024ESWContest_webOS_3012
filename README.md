@@ -1,9 +1,4 @@
 # 2024임베디드SW경진대회(webOS부문) - ELECBRO팀
-<div align="right">
-<a href="https://github.com/YUNSUNGWOONG/2024ESWContest_webOS_3012"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>
-<a href="https://www.youtube.com/watch?v=8vGp5RCuV1c&list=PL55PqTOxkIlj9y1oz22rkJxP7jqsUbBGb&index=1"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white"/></a>
-<a href="https://velog.io/@2170004487z/series/%EC%A0%9C22%ED%9A%8C-%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9CSW%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C" target="_blank"><img src="https://img.shields.io/badge/Velog_(2170004487z)-20C997?style=for-the-badge&logo=velog&logoColor=white"/></a>
-</div>
 
 
 <p align="center">
@@ -118,10 +113,6 @@
 
 
 
-
-
-
-
 ## 📑업무분장
 
 **"농업의 미래를 앞당기는 팀원들"**
@@ -130,7 +121,7 @@
 | ------- | ---- | ---- | ---------- |
 | <div align="center"><br/><sub><b>김현근</b><sub></a></div> | 팀장 | webOS구축, Luna-Service 개발 | NodeJS, ReactJS, Arduino, MongoDB, Arduino |
 | <div align="center"><br/><sub><b>윤성웅</b><sub></a></div> | 팀원 | 프로세서 설계,YOLOv5 API 개발, Vision Model 개발 | Pytorch,OpenCV,RaspberryPI,AUTOSAR |
-| <div align="center"><br/><sub><b>박진석<sub></a></div> | 팀원 | ROS개발환경 구축, Turtlebot 개발, ROS-Bridge 개발 |  ROS, PointCloud |
+| <div align="center"><br/><sub><b>박진석<sub></a></div> | 팀원 | ROS개발환경 구축, Turtlebot 개발, ROS-Bridge 개발 | NodeJS, MongoDB, ROS, PointCloud |
 | <div align="center"><br/><sub><b>김재원</b><sub></a></div> | 팀원 | 데이터 수집 및 라벨링, 데이터 학습 | Python, tkinter, NodeJS, ReactJS, Arduino |
 | <div align="center"><br/><sub><b>김용진</b><sub></a></div> | 팀원 | 프로토타입 설계, 스마트팜 부지 설계 | C/C++, Arduino, Fusion360, P-Spice |
 
@@ -193,6 +184,7 @@
 <hr>
 
 ![firefox_k7rLEkXU9k](./assets/images/README/firefox_k7rLEkXU9k.webp)
+
 
 
 
