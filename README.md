@@ -25,7 +25,7 @@
 
 ## 💡개발환경
 
-![image-20241026012052490](./assets/images/README/image-20241026012052490.png)
+![image-20241026012052490](./assets/images/README/image-20241026012029904.png)
 
 #### ▶자동수확로봇(하비봇)
 
@@ -43,10 +43,6 @@
 - 타이밍에 맞춰, 분류기와 컨베이어 벨트의 회전을 제어
 
 
-
-##  💻아키텍처
-
-![brave_mzQNmdiKvy](./assets/images/README/brave_mzQNmdiKvy.webp)
 
 ## 🎮기능
 
@@ -123,11 +119,6 @@
 
 
 
-## 📋개발일정
-
-![image-20241031033843808](./assets/images/README/image-20241031033843808.png)
-
-
 
 
 
@@ -137,11 +128,11 @@
 
 | Profile | Role | Part | Tech Stack |
 | ------- | ---- | ---- | ---------- |
-| <div align="center"><a href="https://blog.naver.com/yhon89"><img src="./assets/images/README/hyongoon.png" width="80px;" alt=""/><br/><sub><b>김현근</b><sub></a></div> | 팀장 | webOS구축, Luna-Service 개발 | NodeJS, ReactJS, Arduino, MongoDB, Arduino |
-| <div align="center"><a href="https://blog.naver.com/yhon89"><img src="./assets/images/README/sungwoong.png" width="80px;" alt=""/><br/><sub><b>윤성웅</b><sub></a></div> | 팀원 | 프로세서 설계,YOLOv5 API 개발, Vision Model 개발 | Pytorch,OpenCV,RaspberryPI,AUTOSAR |
-| <div align="center"><a href="https://blog.naver.com/yhon89"><img src="./assets/images/README/jinseok.png" width="80px;" alt=""/><br/><sub><b>박진석<sub></a></div> | 팀원 | ROS개발환경 구축, Turtlebot 개발, ROS-Bridge 개발 | NodeJS, MongoDB, ROS, PointCloud |
-| <div align="center"><a href="https://blog.naver.com/yhon89"><img src="./assets/images/README/jaewon.png" width="80px;" alt=""/><br/><sub><b>김재원</b><sub></a></div> | 팀원 | 데이터 수집 및 라벨링, 데이터 학습 | Python, tkinter, NodeJS, ReactJS, Arduino |
-| <div align="center"><a href="https://blog.naver.com/yhon89"><img src="./assets/images/README/yongjin.png" width="80px;" alt=""/><br/><sub><b>김용진</b><sub></a></div> | 팀원 | 프로토타입 설계, 스마트팜 부지 설계 | C/C++, Arduino, Fusion360, P-Spice |
+| <div align="center"><br/><sub><b>김현근</b><sub></a></div> | 팀장 | webOS구축, Luna-Service 개발 | NodeJS, ReactJS, Arduino, MongoDB, Arduino |
+| <div align="center"><br/><sub><b>윤성웅</b><sub></a></div> | 팀원 | 프로세서 설계,YOLOv5 API 개발, Vision Model 개발 | Pytorch,OpenCV,RaspberryPI,AUTOSAR |
+| <div align="center"><br/><sub><b>박진석<sub></a></div> | 팀원 | ROS개발환경 구축, Turtlebot 개발, ROS-Bridge 개발 |  ROS, PointCloud |
+| <div align="center"><br/><sub><b>김재원</b><sub></a></div> | 팀원 | 데이터 수집 및 라벨링, 데이터 학습 | Python, tkinter, NodeJS, ReactJS, Arduino |
+| <div align="center"><br/><sub><b>김용진</b><sub></a></div> | 팀원 | 프로토타입 설계, 스마트팜 부지 설계 | C/C++, Arduino, Fusion360, P-Spice |
 
 
 
@@ -205,8 +196,3 @@
 
 
 
-### &nbsp;IV. 논문 및 특허
-
-- 박순용,"과수원 환경에서 로봇의 주행 제어 방법 및 이를 수행하기 위한 컴퓨팅 장치", 10-2024-0096958
-- 박성호,"영상을 기반으로 한 작물재배 생육 플랫폼 구축을 통한 스마트팜 시스템", 10-2023-0088738
-- 박승,"스마트팜 전동 차량의 주행방법 및 그 방법이 적용된 스마트팜 전동차량", 10-2021-0007445
